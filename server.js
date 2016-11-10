@@ -5,9 +5,6 @@ const cors    = require('cors');
 const app     = express();
 const port    = 3000;
 
-//const re = /([а-яА-Я]{1,}\S|\w{1,}\S)/ig;
-//const re = /\w*\S/ig;
-//const re = /\p{L}{1,}\S/ig;
 const re = /\S{1,}/ig;
 
 let parseName = (lastname, ...rest) => {
